@@ -1,0 +1,2 @@
+version=3
+https://pkg-ruby-extras.alioth.debian.org/cgi-bin/gemwatch/test-unit-rr .*/test-unit-rr-(.*).tar.gz

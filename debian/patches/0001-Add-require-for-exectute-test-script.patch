@@ -1,0 +1,23 @@
+From: Youhei SASAKI <uwabami@gfd-dennou.org>
+Date: Mon, 8 Jul 2013 17:01:30 +0900
+Subject: Add require for exectute test script
+
+Signed-off-by: Youhei SASAKI <uwabami@gfd-dennou.org>
+---
+ test/test-rr.rb | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/test/test-rr.rb b/test/test-rr.rb
+index 6bc802c..b37f019 100644
+--- a/test/test-rr.rb
++++ b/test/test-rr.rb
+@@ -14,6 +14,9 @@
+ # License along with this library; if not, write to the Free Software
+ # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ 
++require 'test-unit'
++require 'test/unit/rr'
++
+ class RRTest < Test::Unit::TestCase
+   class AssertReceivedTest < self
+     def test_success
